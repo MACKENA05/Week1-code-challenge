@@ -1,0 +1,3 @@
+function studentGrade() {
+    let marks = prompt("Enter student marks (0-100):");
+}
