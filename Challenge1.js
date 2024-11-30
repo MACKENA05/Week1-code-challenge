@@ -3,6 +3,7 @@ function studentGrade() {
     marks = parseFloat(marks);
     if (isNaN(marks) || marks < 0 || marks > 100) {
        alert("Invalid input. Please input a number between 0 and 100.");
+       return;
     }else {
         let grade;
         if (marks > 79) {
