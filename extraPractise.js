@@ -18,3 +18,4 @@ function printStairsCase(n) {
 //Testing the function
 printStairsCase(5)
 
+
