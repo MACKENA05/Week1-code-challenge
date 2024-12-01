@@ -1,7 +1,7 @@
 # Week1-code-challenge
 ## Salary, Speed Check, and Student Grade Calculation
 
-#### This project consists of three different fnctions
+#### This project consists of three different fuctions
 
 - **`determineNetSalary()`** :
  Calculates an employee's net salary after deductions for PAYE (tax), NSSF (National Social Security Fund), and NHIF (National Hospital Insurance Fund).
