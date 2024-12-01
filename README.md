@@ -10,13 +10,13 @@ Validates a car's speed against the speed limit and calculates demerit points, o
 - **`studentGrade()`**:
  Determines the grade of a student based on their marks.
 
- ##Table of contsnte 
- 1. [Features](#features)
- 2. [How to use](#how-to-use)
- 3. [Technologies used](#technologies-used)
- 4. [License](#lisence)
+ ## Table of Contents
+1. [Features](#features)
+2. [How to Use](#how-to-use)
+3. [Technologies Used](#technologies-used)
+4. [License](#license)
 
- ## Features
+## Features
 
 - **`determineNetSalary()`**: 
   - Prompts the user for their basic salary and benefits.
@@ -27,10 +27,6 @@ Validates a car's speed against the speed limit and calculates demerit points, o
   - Prompts the user for the speed of their car.
   - Checks if the speed is within the legal limit.
   - Calculates demerit points for each 5 km/h over the limit and displays whether the driver's license should be suspended.
-  
-- **`studentGrade()`**: 
-  - Prompts the user to enter a student's marks (between 0 and 100).
-  - Validates the input and determines the grade (A, B, C, D, or E) based on the marks entered.
   
 ## How to Use
 ### 1. **Determine Net Salary**
