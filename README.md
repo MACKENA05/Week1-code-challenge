@@ -84,6 +84,13 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ### Additional Notes
 
-- The code uses **`prompt()`** to collect input from the user and **`alert()`** to display results. These are simple methods ideal for testing in a browser's JavaScript console.
+- The code uses **`READLINE MODULE`** to collect input from the user  and to display results. These are simple methods ideal for testing in the js terminal 
 - The salary tax rates and NHIF contribution values are based on the current standards and may need to be updated in the future.
 - I used NHIF inplace of SHIF
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- Email: mackenamuthui@gmail.com
+- Phone: +254703886506
