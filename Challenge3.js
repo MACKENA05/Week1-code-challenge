@@ -1,11 +1,27 @@
+//import readline module
+const readline = require('readline');
+
+//create a readline interface for input and output
+
+const rl = readline.createInterface({
+    input: process.stdin ,
+    output: process.stdout 
+});
+
 function determineNetSalary() {
     // Prompt the user for basic salary and benefits
-    let basicSalary = parseFloat(prompt("Enter your basic salary."));
-    let benefits = parseFloat(prompt("Enter your benefits"));
+    rl.question ("Enter your basic salary: ", (basicSalaryinput) => {
+     rl.question ("Enter your benefits: ", (benefitsinput) => {
+        
+        //convert input to numbers
+        let basicSalary = parseFloat(basicSalaryinput)
+        let benefits = parseFloat(benefitsinput);
+     
 
     // Validate the inputs
     if (isNaN(basicSalary) || isNaN(benefits) || basicSalary < 0 || benefits < 0) {
-        alert("Invalid input, please enter valid numbers for basic salary and benefits.");
+        console.log("Invalid input, please enter valid numbers for basic salary and benefits.");
+        rl.close();
         return;
     }
 
@@ -88,7 +104,7 @@ function determineNetSalary() {
             nhifDeduction = 1700;
             break;
         default:
-            alert("Salary out of range.");
+            console.log("Salary out of range.");
             return;
     }
 
@@ -97,13 +113,20 @@ function determineNetSalary() {
     let netSalary = grossSalary - totalDeduction;
 
     // Displaying the result
-    alert("Gross Salary: " + grossSalary.toFixed(2) +
-        "\nTax (PAYEE): " + tax.toFixed(2) +
-        "\nNHIF Deduction: " + nhifDeduction.toFixed(2) +
-        "\nNSSF Deduction: " + nssfDeduction.toFixed(2) +
-        "\nTotal Deductions: " + totalDeduction.toFixed(2) +
-        "\nNet Salary: " + netSalary.toFixed(2));
+    console.log(`Gross Salary: ${grossSalary.toFixed(2)}`);
+    console.log(`Tax (PAYEE): ${tax.toFixed(2)}`);
+    console.log(`NHIF Deduction: ${nhifDeduction.toFixed(2)}`);
+    console.log(`NSSF Deduction: ${nssfDeduction.toFixed(2)}`);
+    console.log(`Total Deductions: ${totalDeduction.toFixed(2)}`);
+    console.log(`Net Salary: ${netSalary.toFixed(2)}`);
+    
+    //close the readline interface
+    rl.close();
+
+    });
+  })
 }
+
 
 // Calling the function
 determineNetSalary();
